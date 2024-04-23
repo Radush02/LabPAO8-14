@@ -15,7 +15,7 @@ public class Main {
                     "2", "*", "5",
                     "1", "+", "5.0",
                     "1.0", "-", "2",
-                    "10.0", "/", "true",
+                    "10.0", "/", "2.5",
                 };
 
         runSmarterCalculator(args);
@@ -23,8 +23,8 @@ public class Main {
 
     private static void runSmarterCalculator(String[] args) {
         Task1_4(args);
-        //        Task2();
-        //        Task3(CalculationRequest.RequestType.Integer);
+        Task2();
+        Task3(CalculationRequest.RequestType.Integer);
     }
 
     private static void Task3(CalculationRequest.RequestType operationType) {

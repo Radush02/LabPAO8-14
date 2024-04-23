@@ -4,7 +4,7 @@ Laboratoare formatate cu Spotless:
 
 `mvn spotless:check`
 
-Pentru a rula orice test ruleaza:
+Testele pot fi rulate cu comanda:
 
 `mvn test`
 
