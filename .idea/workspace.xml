@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd47db06-6e47-4fcf-9ff7-307bbc2061be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab9/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab9/task1/SortedListSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab9/task2/IWordCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab9/task2/WordCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SortedListSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WordCounterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Bee_Movie_Script.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/db268e1e-88d7-4422-b151-8492bb320db7.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/CustomContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/CustomContainerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/utils/InstanceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/utils/InvalidException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/utils/NullException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/utils/RedeclaredException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task1Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task2Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task3Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task4Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task5Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Task6Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/TaskTestsBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/smartercalculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/smartercalculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WordCounterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WordCounterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +60,13 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "JUnit.SmarterCalculatorTest.executor": "Run",
+    "JUnit.Task1Tests.executor": "Run",
+    "JUnit.Task1Tests.testAddInstanceThrowsWhenNullParameters.executor": "Run",
+    "JUnit.Task2Tests.executor": "Run",
+    "JUnit.Task3Tests.executor": "Run",
+    "JUnit.Task3Tests.testAddFactoryMethod.executor": "Run",
+    "JUnit.Task4Tests.executor": "Run",
+    "JUnit.Task5Tests.executor": "Run",
     "JUnit.WordCounterTest.executor": "Run",
     "Maven.LabPAO8-14 [-B,package,--file,pom.xml].executor": "Run",
     "Maven.LabPAO8-14 [spotless:apply].executor": "Run",
@@ -102,6 +114,62 @@
       <command value="mvn test" />
     </option>
   </component>
+  <component name="RunManager" selected="JUnit.Task5Tests">
+    <configuration name="Task1Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabPAO8-14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task2Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabPAO8-14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task2Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabPAO8-14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task4Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabPAO8-14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task4Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task5Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LabPAO8-14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task5Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Task5Tests" />
+        <item itemvalue="JUnit.Task4Tests" />
+        <item itemvalue="JUnit.Task2Tests" />
+        <item itemvalue="JUnit.Task3Tests" />
+        <item itemvalue="JUnit.Task1Tests" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -126,7 +194,10 @@
       <workItem from="1713954534556" duration="554000" />
       <workItem from="1714026051594" duration="7000" />
       <workItem from="1714398558173" duration="1916000" />
-      <workItem from="1714461029147" duration="4330000" />
+      <workItem from="1714461029147" duration="5083000" />
+      <workItem from="1714473376920" duration="34000" />
+      <workItem from="1715606587563" duration="3308000" />
+      <workItem from="1715713489785" duration="4152000" />
     </task>
     <servers />
   </component>

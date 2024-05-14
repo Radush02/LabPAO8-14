@@ -42,7 +42,6 @@ public class WordCounterTest {
 
             // mai sunt si cuvinte precum Bee, bee-man, etc.
             // dar e case sensitive
-            System.out.println(wordCounter.getCount("bee"));
             assertEquals(75, wordCounter.getCount("bee"));
             assertEquals(50, wordCounter.getCount("Barry"));
             assertEquals(0, wordCounter.getCount("nuexist"));
