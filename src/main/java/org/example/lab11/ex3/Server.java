@@ -21,6 +21,4 @@ public class Server {
             LOGGER.error("Eroare", e);
         }
     }
-
-
 }

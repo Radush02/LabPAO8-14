@@ -1,7 +1,6 @@
 package org.example.lab11.ex1;
 
 import java.util.stream.IntStream;
-
 import org.example.lab11.ex1.utils.CompletableFutureHelper;
 import org.example.lab11.ex1.utils.ThreadHelper;
 

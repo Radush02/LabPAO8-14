@@ -1,8 +1,8 @@
 package org.example.lab11.ex1.utils;
 
+import java.util.List;
 import lombok.AllArgsConstructor;
 
-import java.util.List;
 @AllArgsConstructor
 class PowThread extends Thread {
     private final List<Integer> nrArr;
@@ -15,15 +15,15 @@ class PowThread extends Thread {
         this.print = true;
     }
 
-    public PowThread(List<Integer> nrAdd,boolean print){
-        this(nrAdd,2,print);
+    public PowThread(List<Integer> nrAdd, boolean print) {
+        this(nrAdd, 2, print);
     }
+
     @Override
     public void run() {
         for (int num : nrArr) {
             int p = (int) Math.pow(num, pow);
-            if (print)
-                System.out.println(num + "^" + pow + " = " + p);
+            if (print) System.out.println(num + "^" + pow + " = " + p);
         }
     }
 }

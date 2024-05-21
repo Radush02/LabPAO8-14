@@ -1,12 +1,11 @@
 package org.example.lab11.ex3.utils;
 
+import java.io.PrintWriter;
+import java.util.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.io.PrintWriter;
-import java.util.*;
 
 @Setter
 @Getter
@@ -15,6 +14,7 @@ import java.util.*;
 public class MessageManager implements Observable {
     private Map<String, List<User>> userTopics = new HashMap<>();
     private List<User> users = new ArrayList<>();
+
     @Override
     public void subscribe(User user, String topic) {
         System.out.println(user + " s-a abonat la " + topic);
@@ -32,7 +32,13 @@ public class MessageManager implements Observable {
 
     @Override
     public void notify(User notifier, String topic, String message) {
-        System.out.println("Userii din topicul" + topic + " au fost notificati de " + notifier + ": " + message);
+        System.out.println(
+                "Userii din topicul"
+                        + topic
+                        + " au fost notificati de "
+                        + notifier
+                        + ": "
+                        + message);
         List<User> users = userTopics.get(topic);
         if (users != null) {
             for (User u : users) {
@@ -54,14 +60,15 @@ public class MessageManager implements Observable {
             }
         }
     }
+
     public void addWriter(User user, PrintWriter writer) {
-        System.out.println(user+" s-a logat");
+        System.out.println(user + " s-a logat");
         user.setWriter(writer);
         users.add(user);
     }
 
     public void removeWriter(User user) {
-        System.out.println(user+" s-a deconectat");
+        System.out.println(user + " s-a deconectat");
         user.setWriter(null);
         users.remove(user);
     }

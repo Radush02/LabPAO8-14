@@ -1,15 +1,13 @@
 package org.example.lab11.ex3.utils;
 
-import org.example.lab11.ex3.Server;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.SocketException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ClientHandler extends Thread {
     private static final MessageManager messageManager = new MessageManager();
@@ -24,7 +22,8 @@ public class ClientHandler extends Thread {
 
     public void run() {
         try {
-            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+            BufferedReader in =
+                    new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
             String inputLine;
             while ((inputLine = in.readLine()) != null) {
@@ -45,13 +44,15 @@ public class ClientHandler extends Thread {
                     }
                     case "NOTIFY" -> {
                         try {
-                            if(userInput.length==2){
+                            if (userInput.length == 2) {
                                 out.println("@everyone " + userInput[1]);
                                 messageManager.notify(user, userInput[1]);
-                            }
-                            else
-                            {
-                                out.println("Mesaj trimis pe canalul "+userInput[1]+": " + userInput[2]);
+                            } else {
+                                out.println(
+                                        "Mesaj trimis pe canalul "
+                                                + userInput[1]
+                                                + ": "
+                                                + userInput[2]);
                                 messageManager.notify(user, userInput[1], userInput[2]);
                             }
                         } catch (Exception e) {

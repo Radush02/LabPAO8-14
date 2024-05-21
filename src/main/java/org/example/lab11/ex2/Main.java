@@ -1,12 +1,11 @@
 package org.example.lab11.ex2;
+
 import java.io.BufferedWriter;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.stream.IntStream;
-
 import org.example.lab11.ex1.utils.CompletableFutureHelper;
 import org.example.lab11.ex1.utils.ThreadHelper;
 
@@ -17,7 +16,9 @@ public class Main {
 
         int thr = Runtime.getRuntime().availableProcessors();
         int pow = 2;
-        try (BufferedWriter res = new BufferedWriter(new FileWriter("src/main/java/org/example/lab11/ex2/rezultate.txt"))) {
+        try (BufferedWriter res =
+                new BufferedWriter(
+                        new FileWriter("src/main/java/org/example/lab11/ex2/rezultate.txt"))) {
             for (int nr : nrArr) {
                 runThread(res, nr, thr);
                 runParallelStream(res, nr, pow);
@@ -28,11 +29,10 @@ public class Main {
         }
     }
 
-
     private static void runThread(BufferedWriter res, int nr, int thr) throws IOException {
-        ThreadHelper threadHelper =ThreadHelper.getInstance();
+        ThreadHelper threadHelper = ThreadHelper.getInstance();
         long start = System.currentTimeMillis();
-        threadHelper.Helper(nr, thr,false);    //System.out.println() consuma mult timp, il ignoram.
+        threadHelper.Helper(nr, thr, false); // System.out.println() consuma mult timp, il ignoram.
         long end = System.currentTimeMillis();
         res.write("Thread: " + (end - start) + " ms" + " @ " + nr + " numere\n");
         res.flush();
@@ -51,10 +51,12 @@ public class Main {
         res.flush();
     }
 
-    private static void runCompletableFuture(BufferedWriter res, int nr, int thr) throws IOException {
+    private static void runCompletableFuture(BufferedWriter res, int nr, int thr)
+            throws IOException {
         CompletableFutureHelper completableFutureHelper = CompletableFutureHelper.getInstance();
         long start = System.currentTimeMillis();
-        completableFutureHelper.Helper(nr, thr,false);    //System.out.println() consuma mult timp, il ignoram.
+        completableFutureHelper.Helper(
+                nr, thr, false); // System.out.println() consuma mult timp, il ignoram.
         long end = System.currentTimeMillis();
         res.write("CompletableFuture: " + (end - start) + " ms" + " @ " + nr + " numere\n");
         res.flush();

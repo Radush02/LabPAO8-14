@@ -18,16 +18,16 @@ public class ThreadHelper {
         return instance;
     }
 
-    public void Helper(int nr,int thr){
-        Helper(nr,thr,true);
+    public void Helper(int nr, int thr) {
+        Helper(nr, thr, true);
     }
 
-    public void Helper(int nr, int thr,boolean print) {
+    public void Helper(int nr, int thr, boolean print) {
         List<Integer> nrArr = new ArrayList<>();
         for (int i = 1; i <= nr; i++) {
             nrArr.add(i);
         }
-        List<Thread> threads = getThreads(nr, thr, nrArr,print);
+        List<Thread> threads = getThreads(nr, thr, nrArr, print);
         for (Thread thread : threads) {
             thread.start();
         }
@@ -41,7 +41,7 @@ public class ThreadHelper {
         }
     }
 
-    private static List<Thread> getThreads(int nr, int thr, List<Integer> nrArr,boolean print){
+    private static List<Thread> getThreads(int nr, int thr, List<Integer> nrArr, boolean print) {
         List<Thread> threads = new ArrayList<>();
         int dim = (int) Math.ceil((double) nr / thr);
         for (int i = 0; i < thr; i++) {
@@ -49,7 +49,7 @@ public class ThreadHelper {
             int fin = Math.min(start + dim, nr);
             if (start < fin) {
                 List<Integer> subList = nrArr.subList(start, fin);
-                Thread thread = new PowThread(subList,print);
+                Thread thread = new PowThread(subList, print);
                 threads.add(thread);
             }
         }

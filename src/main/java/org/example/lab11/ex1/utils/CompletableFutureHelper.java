@@ -17,23 +17,26 @@ public class CompletableFutureHelper {
         }
         return instance;
     }
-    public void Helper(int nr,int thr){
-        Helper(nr,thr,true);
+
+    public void Helper(int nr, int thr) {
+        Helper(nr, thr, true);
     }
-    public void Helper(int nr, int thr,boolean print) {
+
+    public void Helper(int nr, int thr, boolean print) {
         List<Integer> nrArr = new ArrayList<>();
         for (int i = 1; i <= nr; i++) {
             nrArr.add(i);
         }
         ExecutorService executor = Executors.newFixedThreadPool(thr);
-        List<CompletableFuture<Void>> futures = getFutures(nr, thr, nrArr,print);
+        List<CompletableFuture<Void>> futures = getFutures(nr, thr, nrArr, print);
         CompletableFuture<Void> allOf =
                 CompletableFuture.allOf(futures.toArray(new CompletableFuture[0]));
         allOf.join();
         executor.shutdown();
     }
 
-    private List<CompletableFuture<Void>> getFutures(int nr, int thr, List<Integer> nrArr,boolean print) {
+    private List<CompletableFuture<Void>> getFutures(
+            int nr, int thr, List<Integer> nrArr, boolean print) {
         List<CompletableFuture<Void>> futures = new ArrayList<>();
         int dim = (int) Math.ceil((double) nr / thr);
         for (int i = 0; i < thr; i++) {
@@ -46,8 +49,7 @@ public class CompletableFutureHelper {
                                 () -> {
                                     for (int num : subList) {
                                         int p = (int) Math.pow(num, 2);
-                                        if (print)
-                                            System.out.println(num + "^" + 2 + " = " + p);
+                                        if (print) System.out.println(num + "^" + 2 + " = " + p);
                                     }
                                 });
                 futures.add(future);
