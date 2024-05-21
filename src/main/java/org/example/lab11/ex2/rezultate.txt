@@ -1,0 +1,12 @@
+Thread: 2 ms @ 10 numere
+parallelStream: 2 ms @ 10 numere
+CompletableFuture: 4 ms @ 10 numere
+Thread: 1 ms @ 1000 numere
+parallelStream: 1 ms @ 1000 numere
+CompletableFuture: 1 ms @ 1000 numere
+Thread: 5 ms @ 10000 numere
+parallelStream: 1 ms @ 10000 numere
+CompletableFuture: 1 ms @ 10000 numere
+Thread: 342 ms @ 10000000 numere
+parallelStream: 49 ms @ 10000000 numere
+CompletableFuture: 349 ms @ 10000000 numere

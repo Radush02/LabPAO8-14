@@ -21,7 +21,5 @@ jobs:
         cache: maven
     - name: Build
       run: mvn -B package --file pom.xml
-    - name: Test spotless #Deja build-ul se ocupa de spotless, dar sa fim siguri :)
-      run: mvn spotless:check
     - name: Aplica teste
-      run: mvn test
+      run: mvn -X test

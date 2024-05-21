@@ -9,6 +9,7 @@ import org.example.lab10.dic.utils.InvalidException;
 import org.example.lab10.dic.utils.NullException;
 import org.example.lab10.dic.utils.RedeclaredException;
 
+@SuppressWarnings("unchecked")
 public class CustomContainerImpl implements CustomContainer {
     private final Map<String, Object> instances = new HashMap<>();
     private final Map<Class<?>, Function<CustomContainer, ?>> factory = new HashMap<>();
