@@ -5,30 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd47db06-6e47-4fcf-9ff7-307bbc2061be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex1/utils/CompletableFutureHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex1/utils/PowThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex1/utils/ThreadHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex2/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex2/rezultate.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/Exceptions/TopicException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/MessageManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/Observable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab11/ex3/utils/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex1/MyUtilityClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex2/posts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UtilityClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/CustomContainerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/lab10/dic/CustomContainerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Task2Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Task2Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +58,7 @@
     "Application.Server.executor": "Run",
     "Application.org.example.lab11.ex2.Main.executor": "Run",
     "Application.org.example.lab11.ex3.Main.executor": "Run",
+    "Application.org.example.lab12.ex2.Main.executor": "Run",
     "JUnit.SmarterCalculatorTest.executor": "Run",
     "JUnit.Task1Tests.executor": "Run",
     "JUnit.Task1Tests.testAddInstanceThrowsWhenNullParameters.executor": "Run",
@@ -81,6 +67,7 @@
     "JUnit.Task3Tests.testAddFactoryMethod.executor": "Run",
     "JUnit.Task4Tests.executor": "Run",
     "JUnit.Task5Tests.executor": "Run",
+    "JUnit.UtilityClassTest.executor": "Run",
     "JUnit.WordCounterTest.executor": "Run",
     "Maven.LabPAO8-14 [-B,package,--file,pom.xml].executor": "Run",
     "Maven.LabPAO8-14 [-B,test,-DTest=Task1Tests].executor": "Run",
@@ -123,6 +110,9 @@
       <recent name="C:\Users\Radu\IdeaProjects\LabPAO8-14\src\main\java\org\example\lab11\ex3\utils" />
       <recent name="C:\Users\Radu\IdeaProjects\LabPAO8-14\src\test\java\utils" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -136,7 +126,7 @@
       <command value="mvn spotless:apply" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client 1">
+  <component name="RunManager" selected="JUnit.UtilityClassTest">
     <configuration name="Client 1" type="Application" factoryName="Application" singleton="false" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.lab11.ex3.Client" />
       <module name="LabPAO8-14" />
@@ -151,11 +141,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.lab11.ex1.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.example.lab12.ex1.Main" />
       <module name="LabPAO8-14" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.lab11.ex1.*" />
+          <option name="PATTERN" value="org.example.lab12.ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,12 +166,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.lab11.ex2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.lab11.ex2.Main" />
+    <configuration name="org.example.lab12.ex2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lab12.ex2.Main" />
       <module name="LabPAO8-14" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.lab11.ex2.*" />
+          <option name="PATTERN" value="org.example.lab12.ex2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,33 +179,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.lab11.ex3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.lab11.ex3.Main" />
+    <configuration name="UtilityClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LabPAO8-14" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.lab11.ex3.Client" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UtilityClassTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client 1" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.org.example.lab11.ex2.Main" />
-      <item itemvalue="Application.org.example.lab11.ex3.Main" />
+      <item itemvalue="Application.org.example.lab12.ex2.Main" />
+      <item itemvalue="Application.Client 1" />
       <item itemvalue="Application.Server" />
+      <item itemvalue="JUnit.UtilityClassTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UtilityClassTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.org.example.lab12.ex2.Main" />
         <item itemvalue="Application.Client 1" />
         <item itemvalue="Application.Server" />
-        <item itemvalue="Application.org.example.lab11.ex3.Main" />
-        <item itemvalue="Application.org.example.lab11.ex2.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -249,6 +235,11 @@
       <workItem from="1715713489785" duration="5924000" />
       <workItem from="1715849447137" duration="236000" />
       <workItem from="1716275766962" duration="17169000" />
+      <workItem from="1716296225307" duration="508000" />
+      <workItem from="1716755864350" duration="240000" />
+      <workItem from="1716805612903" duration="2966000" />
+      <workItem from="1716808599648" duration="6295000" />
+      <workItem from="1716899030788" duration="1449000" />
     </task>
     <servers />
   </component>
