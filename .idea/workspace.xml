@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd47db06-6e47-4fcf-9ff7-307bbc2061be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex1/MyUtilityClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab12/ex2/posts.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UtilityClassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab13/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab13/task5/Bilant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab13/task6/CharCounter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab13/task6/CharCounter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/lab13/task6/lorem_ipsum.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +50,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Bilant.executor": "Run",
     "Application.Client 1.executor": "Run",
     "Application.Client.executor": "Run",
     "Application.Main.executor": "Run",
@@ -126,7 +125,20 @@
       <command value="mvn spotless:apply" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UtilityClassTest">
+  <component name="RunManager" selected="Application.Bilant">
+    <configuration name="Bilant" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lab13.task5.Bilant" />
+      <module name="LabPAO8-14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.lab13.task5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Client 1" type="Application" factoryName="Application" singleton="false" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.example.lab11.ex3.Client" />
       <module name="LabPAO8-14" />
@@ -146,19 +158,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.lab12.ex1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.lab11.ex3.Server" />
-      <module name="LabPAO8-14" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.lab11.ex3.Client" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,25 +188,26 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Bilant" />
+      <item itemvalue="Application.Client 1" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.org.example.lab12.ex2.Main" />
-      <item itemvalue="Application.Client 1" />
-      <item itemvalue="Application.Server" />
       <item itemvalue="JUnit.UtilityClassTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Bilant" />
         <item itemvalue="JUnit.UtilityClassTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.org.example.lab12.ex2.Main" />
         <item itemvalue="Application.Client 1" />
-        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
         <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
       </set>
     </attachedChunks>
@@ -239,7 +239,12 @@
       <workItem from="1716755864350" duration="240000" />
       <workItem from="1716805612903" duration="2966000" />
       <workItem from="1716808599648" duration="6295000" />
-      <workItem from="1716899030788" duration="1449000" />
+      <workItem from="1716899030788" duration="2227000" />
+      <workItem from="1717184551061" duration="14000" />
+      <workItem from="1717184604380" duration="3090000" />
+      <workItem from="1717428932603" duration="68000" />
+      <workItem from="1717429243171" duration="1868000" />
+      <workItem from="1717487866208" duration="2283000" />
     </task>
     <servers />
   </component>
