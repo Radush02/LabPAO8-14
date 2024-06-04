@@ -3,7 +3,7 @@ package org.example.lab13.task5;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bilant implements Comparable<Bilant>{
+public class Bilant implements Comparable<Bilant> {
     private int pozitive;
     private int negative;
 
@@ -15,30 +15,37 @@ public class Bilant implements Comparable<Bilant>{
         this.pozitive = pozitive;
         this.negative = negative;
     }
-    public Bilant(){
-        this(0,0);
+
+    public Bilant() {
+        this(0, 0);
     }
 
     public int getPozitive() {
         return pozitive;
     }
+
     public void setPozitive(int pozitive) {
         this.pozitive = pozitive;
     }
+
     public int getNegative() {
         return negative;
     }
+
     public void setNegative(int negative) {
         this.negative = negative;
     }
+
     @Override
     public int compareTo(Bilant o) {
         return Integer.compare(this.pozitive - this.negative, o.pozitive - o.negative);
     }
+
     @Override
     public String toString() {
         return pozitive + "-" + negative;
     }
+
     public static void main(String[] args) {
         List<Bilant> bilanturi = new ArrayList<>();
         bilanturi.add(new Bilant());
@@ -50,9 +57,6 @@ public class Bilant implements Comparable<Bilant>{
         bilanturi.add(new Bilant(7, 5));
         bilanturi.add(new Bilant(8, 5));
 
-        bilanturi.stream()
-                .sorted()
-                .toList()
-                .forEach(p -> System.out.println(p));
+        bilanturi.stream().sorted().toList().forEach(p -> System.out.println(p));
     }
 }
